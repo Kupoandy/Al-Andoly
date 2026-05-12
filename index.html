@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AL ANDOLY | Luxury Oil Perfumes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor"></div>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader__content">
+      <span>AL ANDOLY</span>
+      <h1>Crafting Your Aura</h1>
+    </div>
+  </div>
+
+  <!-- Ad trigger button (present on all pages) -->
+  <button class="ad-trigger" id="adTrigger">
+    <span>🔥</span> EXCLUSIVE OFFERS
+  </button>
+
+  <!-- Advertisement Modal -->
+  <div class="ad-modal" id="adModal">
+    <div class="ad-modal__overlay"></div>
+    <div class="ad-modal__content glass">
+      <button class="ad-modal__close" id="adClose">&times;</button>
+      <div class="ad-slider" id="adSlider"></div>
+      <div class="ad-slider__controls">
+        <button id="adPrev">&#10094;</button>
+        <button id="adNext">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header glass">
+    <div class="header__logo">
+      <img src="pictures/logo.jpg" alt="AL ANDOLY" />
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="products.html">Products</a>
+      <a href="reviews.html">Reviews</a>
+    </nav>
+    <button class="header__burger">☰</button>
+  </header>
+
+  <main>
+    <!-- Hero with Three.js canvas -->
+    <section class="hero" id="hero">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="eyebrow">Alcohol‑Free · Oil‑Based · Long‑Lasting</p>
+        <h1>More Than<br>A Scent.<br>It’s Your Aura.</h1>
+        <p class="hero__description">
+          Hand‑crafted Middle Eastern oil perfumes, fused with the spirit of Papua New Guinea.
+          Wear your identity, leave a quiet mark that lasts from morning until night.
+        </p>
+        <div class="hero__actions">
+          <a href="catalogue.html" class="btn gold">Explore Collection</a>
+          <a href="about.html" class="btn ghost">Our Story</a>
+        </div>
+      </div>
+      <div class="floating-bottle"></div>
+    </section>
+    <!-- Why Choose AL ANDOLY -->
+    <section class="why-choose" id="why-choose">
+      <div class="section-intro">
+        <p class="eyebrow">Why AL ANDOLY?</p>
+        <h2>The AL ANDOLY Difference</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card glass">
+          <div class="benefit-icon">🌿</div>
+          <h3>100% Alcohol-Free</h3>
+          <p>Pure oil-based formulation that's gentle on sensitive skin and perfect for all climates. No harsh alcohol, just pure essence.</p>
+        </div>
+        <div class="benefit-card glass">
+          <div class="benefit-icon">⏱️</div>
+          <h3>Long-Lasting Wear</h3>
+          <p>24-hour staying power that develops throughout the day. One application keeps your aura present from sunrise to sunset.</p>
+        </div>
+        <div class="benefit-card glass">
+          <div class="benefit-icon">✋</div>
+          <h3>Handcrafted Quality</h3>
+          <p>Each bottle is carefully formulated using traditional Middle Eastern methods combined with premium Papua New Guinea ingredients.</p>
+        </div>
+        <div class="benefit-card glass">
+          <div class="benefit-icon">🌍</div>
+          <h3>Ethically Sourced</h3>
+          <p>Premium ingredients sourced responsibly, supporting local communities and sustainable practices across multiple continents.</p>
+        </div>
+        <div class="benefit-card glass">
+          <div class="benefit-icon">💎</div>
+          <h3>Luxury at Value</h3>
+          <p>Premium quality without the premium markup. Direct from our workshop to your collection—authentic luxury, fairly priced.</p>
+        </div>
+        <div class="benefit-card glass">
+          <div class="benefit-icon">🤝</div>
+          <h3>Reseller Program</h3>
+          <p>Join our growing network of resellers. Comprehensive kits, support, and competitive margins for entrepreneurs and retailers.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Marquee -->
+    <section class="marquee-section">
+      <div class="marquee-track">
+        <span>Luxury Oil Perfumes</span>
+        <span>24 Signature Scents</span>
+        <span>Reseller Kits Available</span>
+        <span>Luxury Oil Perfumes</span>
+      </div>
+    </section>
+
+    <!-- How to Use / Usage Guide -->
+    <section class="usage-guide" id="usage-guide">
+      <div class="section-intro center">
+        <p class="eyebrow">Getting Started</p>
+        <h2>How to Wear AL ANDOLY</h2>
+      </div>
+      <div class="usage-steps">
+        <div class="step glass">
+          <span class="step-number">01</span>
+          <h3>Apply Sparingly</h3>
+          <p>AL ANDOLY is highly concentrated. Just 2-3 rolls on pulse points (wrists, behind ears, inner elbows) is all you need.</p>
+        </div>
+        <div class="step glass">
+          <span class="step-number">02</span>
+          <h3>Warm & Activate</h3>
+          <p>The warmth of your body releases the fragrance. Gently rub pulse points together or let the natural body heat work its magic.</p>
+        </div>
+        <div class="step glass">
+          <span class="step-number">03</span>
+          <h3>Experience Longevity</h3>
+          <p>Feel your aura develop throughout the day as notes evolve and deepen. One application lasts 24 hours across multiple wearings.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Product Categories / Use Cases -->
+    <section class="use-cases" id="use-cases">
+      <div class="section-intro">
+        <p class="eyebrow">Perfect For</p>
+        <h2>AL ANDOLY for Every Occasion</h2>
+      </div>
+      <div class="cases-grid">
+        <div class="case-item glass">
+          <h3>Business & Professional</h3>
+          <p>Make a lasting impression in the boardroom. Subtle elegance that commands respect without overpowering.</p>
+          <span class="recommendation">→ Try: Royal Ember, Noir Elixir</span>
+        </div>
+        <div class="case-item glass">
+          <h3>Evening & Events</h3>
+          <p>Sophisticated presence for special occasions. Rich, complex layers that evolve beautifully throughout the night.</p>
+          <span class="recommendation">→ Try: Velvet Dusk, Amber Dynasty</span>
+        </div>
+        <div class="case-item glass">
+          <h3>Daily Confidence</h3>
+          <p>Your signature scent. Wear it daily to create your unique olfactory identity that people remember.</p>
+          <span class="recommendation">→ Try: Soft Jasmine, Golden Hour</span>
+        </div>
+        <div class="case-item glass">
+          <h3>Sensitive Skin</h3>
+          <p>100% alcohol-free means no irritation. Pure oil formulation is gentle while delivering intense fragrance.</p>
+          <span class="recommendation">→ Try: Rose Garden, Vanilla Silk</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection tease -->
+    <section class="collection" id="collection">
+      <div class="section-intro">
+        <p class="eyebrow">Signature Collection</p>
+        <h2>Designed Like A Luxury Campaign.</h2>
+      </div>
+      <div class="collection-grid">
+        <article class="perfume-card glass">
+          <div class="perfume-visual"><img src="pictures/10.png" alt="Royal Ember"></div>
+          <h3>Royal Ember</h3>
+          <p>Smoky oud, saffron and black rose.</p>
+        </article>
+        <article class="perfume-card glass">
+          <div class="perfume-visual alt"><img src="pictures/11.png" alt="Velvet Dusk"></div>
+          <h3>Velvet Dusk</h3>
+          <p>Vanilla musk with warm amber.</p>
+        </article>
+        <article class="perfume-card glass">
+          <div class="perfume-visual gold-visual"><img src="pictures/12.png" alt="Noir Elixir"></div>
+          <h3>Noir Elixir</h3>
+          <p>Leather, spice and sandalwood.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Brand Story snippet -->
+    <section class="story" id="story">
+      <div class="story__content">
+        <p class="eyebrow">Our Heritage</p>
+        <h2>Discipline, Precision, Presence.</h2>
+        <p>
+          AL ANDOLY is named after a grandfather whose quiet authority transformed a room.
+          Every bottle carries that silent strength – alcohol‑free attars that become part of you,
+          not just something you wear.
+        </p>
+        <a href="about.html" class="btn ghost">Read Full Story</a>
+      </div>
+      <div class="story__visual glass"><img src="pictures/13.png" alt="AL ANDOLY Heritage" style="width:100%;height:100%;object-fit:cover;border-radius:40px;"></div>
+    </section>
+
+    <!-- Ingredient teaser -->
+    <section class="ingredients" id="ingredients">
+      <div class="section-intro center">
+        <p class="eyebrow">Ingredient Experience</p>
+        <h2>Floating Notes & Rare Oils.</h2>
+      </div>
+      <div class="ingredient-orbs">
+        <div class="orb">Oud</div>
+        <div class="orb">Amber</div>
+        <div class="orb">Rose</div>
+        <div class="orb">Musk</div>
+      </div>
+    </section>
+
+    <!-- Campaign video (optional) -->
+    <section class="campaign">
+      <video autoplay muted loop playsinline>
+        <source src="videos/campaign.mp4" type="video/mp4">
+      </video>
+      <div class="campaign__overlay">
+        <h2>Every Scent Tells A Story.</h2>
+      </div>
+    </section>
+
+    <!-- Partnership / Reseller Section -->
+    <section class="partnership" id="partnership">
+      <div class="section-intro center">
+        <p class="eyebrow">Business Opportunities</p>
+        <h2>Become Part of the AL ANDOLY Network</h2>
+      </div>
+      <div class="partnership-content glass">
+        <div class="partnership-info">
+          <h3>Reseller & Wholesale Program</h3>
+          <p>AL ANDOLY offers competitive wholesale opportunities for retailers, boutiques, and entrepreneurs. Our reseller kits are designed to help you build a profitable business around premium, handcrafted oil perfumes.</p>
+          <div class="partnership-features">
+            <p>✓ Wholesale pricing with healthy margins</p>
+            <p>✓ Complete reseller starter kits</p>
+            <p>✓ Marketing materials & brand guidelines</p>
+            <p>✓ Dedicated support & logistics assistance</p>
+            <p>✓ Access to exclusive limited editions</p>
+            <p>✓ Training on product knowledge & selling techniques</p>
+          </div>
+          <a href="products.html" class="btn gold" style="margin-top: 1.5rem;">Explore Reseller Kits</a>
+        </div>
+        <div class="partnership-contact">
+          <h4>Get Started Today</h4>
+          <p>Contact us to learn about our wholesale programs and partnership opportunities.</p>
+          <p style="margin: 1rem 0; font-weight: 600;">📱 WhatsApp: +675 7570 5680</p>
+          <p style="margin: 1rem 0;">📍 Shop 170, Garden City SME Centre, Port Moresby, PNG</p>
+          <p style="opacity: 0.7; margin-top: 1rem;">Available for retail inquiries and reseller consultations</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="section-intro center">
+        <p class="eyebrow">Common Questions</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-items">
+        <div class="faq-item glass">
+          <h4>What makes AL ANDOLY different from regular perfumes?</h4>
+          <p>AL ANDOLY is 100% alcohol-free, oil-based, and handcrafted using traditional Middle Eastern methods. Our perfumes are significantly more concentrated and long-lasting than standard eau de parfum, offering 24+ hours of wear from minimal application.</p>
+        </div>
+        <div class="faq-item glass">
+          <h4>Is AL ANDOLY suitable for sensitive skin?</h4>
+          <p>Yes! Because we use no harsh alcohol and only premium oils, AL ANDOLY is ideal for sensitive skin. The oil-based formula is gentle while still delivering powerful fragrance presence.</p>
+        </div>
+        <div class="faq-item glass">
+          <h4>How long does one bottle last?</h4>
+          <p>Due to the concentrated formula, one 6ml bottle can last 2-3 months with regular daily use (2-3 applications). Your bottle becomes a daily companion, not a quick consumable.</p>
+        </div>
+        <div class="faq-item glass">
+          <h4>Can I use AL ANDOLY on clothing and body?</h4>
+          <p>Absolutely! Our oil-based formula works beautifully on skin, clothing, and even fabrics. Be mindful that oils may leave subtle marks on certain delicate fabrics, so test on inconspicuous areas first.</p>
+        </div>
+        <div class="faq-item glass">
+          <h4>How do I store AL ANDOLY properly?</h4>
+          <p>Store in a cool, dark place away from direct sunlight. The amber glass bottles protect the oil from UV damage. Avoid extreme temperatures. Properly stored, AL ANDOLY maintains quality for years.</p>
+        </div>
+        <div class="faq-item glass">
+          <h4>What are your wholesale/reseller prices?</h4>
+          <p>Wholesale pricing varies based on order volume. Please contact us via WhatsApp (+675 7570 5680) for detailed pricing on reseller kits and bulk orders.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <img src="pictures/logo.jpg" alt="AL ANDOLY" class="footer__logo" />
+      <p>More than a scent, it's your aura.</p>
+    </div>
+    <div class="footer__links">
+      <a href="catalogue.html">Catalogue</a>
+      <a href="products.html">Reseller Kits</a>
+      <a href="reviews.html">Testimonials</a>
+    </div>
+    <div class="footer__contact">
+      <p>WhatsApp: +675 7570 5680</p>
+      <p>Shop 170, Garden City SME Centre, POM</p>
+    </div>
+    <p class="footer__copy">&copy; 2025 AL ANDOLY. All rights reserved.</p>
+  </footer>
+</body>
+</html>

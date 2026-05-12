@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | AL ANDOLY Wholesale</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Inter:wght@300..600&display=swap" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor"></div>
+  <button class="ad-trigger" id="adTrigger">🔥 EXCLUSIVE OFFERS</button>
+  <div class="ad-modal" id="adModal">
+    <div class="ad-modal__overlay"></div>
+    <div class="ad-modal__content glass">
+      <button class="ad-modal__close" id="adClose">&times;</button>
+      <div class="ad-slider" id="adSlider"></div>
+      <div class="ad-slider__controls"><button id="adPrev">&#10094;</button><button id="adNext">&#10095;</button></div>
+    </div>
+  </div>
+
+  <header class="header glass">
+    <div class="header__logo"><img src="pictures/logo.jpg" alt="AL ANDOLY"/></div>
+    <nav>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="catalogue.html">Catalogue</a>
+      <a href="products.html" class="active">Products</a><a href="reviews.html">Reviews</a>
+    </nav>
+    <button class="header__burger">☰</button>
+  </header>
+
+  <main class="page-products">
+    <section class="hero-inner">
+      <p class="eyebrow">Our Product Range</p>
+      <h1>Complete Fragrance & Beauty Solutions</h1>
+      <p class="hero__subtitle">Premium perfumes, wholesale kits, raw materials, and packaging supplies—everything for fragrance retailers and beauty entrepreneurs.</p>
+    </section>
+
+    <!-- Oil-Based Perfumes Section -->
+    <section class="product-section">
+      <div class="section-intro">
+        <p class="eyebrow">Signature Collection</p>
+        <h2>Oil-Based Perfumes</h2>
+        <p>High-concentration, alcohol-free fragrances designed for 24+ hour lasting performance. Each bottle represents our commitment to discipline, cultural fusion, and authentic luxury.</p>
+      </div>
+      <div class="glass-grid">
+        <div class="product-card glass">
+          <img src="pictures/10.png" alt="Cherry Bouquet"/>
+          <h3>Cherry Bouquet</h3>
+          <p>A sophisticated blend capturing elegance and charm. Perfect for those who appreciate refined, memorable fragrances.</p>
+          <span class="price">From K89</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Order Now</a>
+        </div>
+        <div class="product-card glass">
+          <img src="pictures/11.png" alt="Pure Sophistication"/>
+          <h3>Pure Sophistication</h3>
+          <p>Timeless elegance in a bottle. A fragrance that evolves beautifully, becoming part of your daily identity.</p>
+          <span class="price">From K89</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Order Now</a>
+        </div>
+        <div class="product-card glass">
+          <img src="pictures/12.png" alt="Midnight Fun"/>
+          <h3>Midnight Fun</h3>
+          <p>Captivating and playful. A bold fragrance for those who make a presence felt without overshadowing.</p>
+          <span class="price">From K89</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Order Now</a>
+        </div>
+        <div class="product-card glass">
+          <img src="pictures/13.png" alt="Captivating Beauty"/>
+          <h3>Captivating Beauty</h3>
+          <p>Enchanting and rich. A fragrance that draws people in while maintaining an air of quiet sophistication.</p>
+          <span class="price">From K89</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Order Now</a>
+        </div>
+        <div class="product-card glass">
+          <img src="pictures/20.png" alt="Designer-Inspired Collection"/>
+          <h3>Designer-Inspired Collection</h3>
+          <p>Wide rotating catalogue based on market demand. Niche fragrances inspired by globally recognized luxury brands.</p>
+          <span class="price">Upon request</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Request Scent</a>
+        </div>
+        <div class="product-card glass">
+          <img src="pictures/21.png" alt="Custom Fragrance"/>
+          <h3>Custom Fragrance Blending</h3>
+          <p>Work with our creative team to develop a signature scent tailored to your brand identity or personal preference.</p>
+          <span class="price">Inquire for pricing</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reseller Kits Section -->
+    <section class="product-section">
+      <div class="section-intro">
+        <p class="eyebrow">Wholesale Solutions</p>
+        <h2>Reseller Kits</h2>
+        <p>Designed for individuals and SMEs to generate income through fragrance resale. Everything you need to launch or expand your fragrance business.</p>
+      </div>
+      <div class="glass-grid">
+        <div class="product-card glass">
+          <img src="pictures/Oriental Frag Resellers Flyers (5).png" alt="Oriental Kit"/>
+          <h3>Oriental Reseller Kit</h3>
+          <p><strong>Pre-selected signature scents:</strong> Cherry Bouquet, Pure Sophistication, Midnight Fun, Captivating Beauty</p>
+          <p><strong>Includes:</strong> Product testers, branding materials, sales tools, marketing guidelines</p>
+          <span class="price">From K1,100</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Order Now</a>
+        </div>
+        <div class="product-card glass">
+          <img src="pictures/Advertisment6.png" alt="Designer Kit"/>
+          <h3>Niche/Designer Reseller Kit</h3>
+          <p><strong>Customizable selection:</strong> Choose your 6 favorite scents (4 bottles each = 24 bottles total)</p>
+          <p><strong>Full starter pack:</strong> Packaging, labels, testers, display items, business training</p>
+          <span class="price">From K2,200</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Order Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Raw Materials & Oils Section -->
+    <section class="product-section">
+      <div class="section-intro">
+        <p class="eyebrow">Beauty & SME Support</p>
+        <h2>Raw Materials & Oils</h2>
+        <p>Cosmetic-grade ingredients for beauty entrepreneurs. Create your own fragrance, skincare, and wellness products with premium, tested materials.</p>
+      </div>
+      <div class="glass-grid">
+        <div class="product-card glass">
+          <h3>Fragrance Oils (Bulk)</h3>
+          <p>High-concentration fragrance oils for custom perfume creation, diffusers, and body products. Premium quality for professional results.</p>
+          <span class="price">Inquire for pricing</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Get Quote</a>
+        </div>
+        <div class="product-card glass">
+          <h3>Carrier Oils & Blending Bases</h3>
+          <p>Jojoba, coconut, argan, and other premium carrier oils perfect for custom blends and dilution. 100% pure, cosmetic-grade.</p>
+          <span class="price">Inquire for pricing</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Get Quote</a>
+        </div>
+        <div class="product-card glass">
+          <h3>Raw Cosmetic Ingredients</h3>
+          <p>Essential oils, botanicals, and beauty ingredients for formulating skincare, wellness, and lifestyle products.</p>
+          <span class="price">Inquire for pricing</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Get Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packaging Section -->
+    <section class="product-section">
+      <div class="section-intro">
+        <p class="eyebrow">Brand Presentation</p>
+        <h2>Packaging & Branding Supplies</h2>
+        <p>Everything you need to present a premium product. Support your brand identity with quality packaging and professional presentation materials.</p>
+      </div>
+      <div class="glass-grid">
+        <div class="product-card glass">
+          <h3>Perfume Bottles</h3>
+          <p>Various sizes and styles—from luxury glass bottles to practical roll-on containers. Amber glass to protect oil quality.</p>
+          <span class="price">Bulk pricing available</span>
+          <a href="https://wa.me/67575705680" class="btn gold">View Options</a>
+        </div>
+        <div class="product-card glass">
+          <h3>Roll-On Bottles & Applicators</h3>
+          <p>High-quality roll-on bottles with smooth applicators. Perfect for convenient, portable fragrance application.</p>
+          <span class="price">Bulk pricing available</span>
+          <a href="https://wa.me/67575705680" class="btn gold">View Options</a>
+        </div>
+        <div class="product-card glass">
+          <h3>Labels & Branding Stickers</h3>
+          <p>Custom label design support. Professional labels for bottles, boxes, and packaging—build your brand identity.</p>
+          <span class="price">Inquire for details</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Design Consultation</a>
+        </div>
+        <div class="product-card glass">
+          <h3>Boxes & Packaging Materials</h3>
+          <p>Premium boxes, pouches, tissue paper, and display items. Create an unboxing experience that reflects luxury.</p>
+          <span class="price">Bulk pricing available</span>
+          <a href="https://wa.me/67575705680" class="btn gold">View Options</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Complementary Products Section -->
+    <section class="product-section">
+      <div class="section-intro">
+        <p class="eyebrow">Expanding Range</p>
+        <h2>Complementary Beauty & Lifestyle</h2>
+        <p>Beyond fragrance. Natural oils, wellness products, and scent-related lifestyle items—expanding the AL ANDOLY ecosystem.</p>
+      </div>
+      <div class="glass-grid">
+        <div class="product-card glass">
+          <h3>Natural Oils & Wellness</h3>
+          <p>Premium natural oils for skincare, massage, and aromatherapy. Complementary to our fragrance collection.</p>
+          <span class="price">Upon request</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Inquire</a>
+        </div>
+        <div class="product-card glass">
+          <h3>Scent Lifestyle Items</h3>
+          <p>Developing: fragrance-inspired home products, accessories, and lifestyle items. Coming soon.</p>
+          <span class="price">Pre-order available</span>
+          <a href="https://wa.me/67575705680" class="btn gold">Get Notified</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose AL ANDOLY for Wholesale -->
+    <section class="cta-banner glass">
+      <h2>Why Partner With AL ANDOLY?</h2>
+      <ul>
+        <li>✔ <strong>Proven Best-Selling Fragrances</strong> – Customers love our scents</li>
+        <li>✔ <strong>High Profit Margins</strong> – Up to 100%+ markup potential</li>
+        <li>✔ <strong>Complete Support</strong> – Marketing materials, training, and guidance</li>
+        <li>✔ <strong>Full-Service Platform</strong> – Fragrance, raw materials, and packaging all in one place</li>
+        <li>✔ <strong>Flexible Model</strong> – Sell online, at markets, wholesale, or directly to customers</li>
+        <li>✔ <strong>Cosmetic-Grade Quality</strong> – Standards you can trust</li>
+        <li>✔ <strong>Entrepreneurship Focus</strong> – We support your success</li>
+      </ul>
+      <a href="https://wa.me/67575705680" class="btn gold">Start Your Business Today</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand"><img src="pictures/logo.jpg" alt="AL ANDOLY" class="footer__logo"/><p>More than a scent, it's your aura.</p></div>
+    <div class="footer__links"><a href="catalogue.html">Catalogue</a><a href="products.html">Reseller Kits</a><a href="reviews.html">Testimonials</a></div>
+    <div class="footer__contact"><p>WhatsApp: +675 7570 5680</p><p>Shop 170, Garden City SME Centre, POM</p></div>
+    <p class="footer__copy">&copy; 2025 AL ANDOLY</p>
+  </footer>
+</body>
+</html>
