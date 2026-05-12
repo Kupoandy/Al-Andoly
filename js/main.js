@@ -193,7 +193,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('nav');
   if (burger && nav) {
     burger.addEventListener('click', () => {
-      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', nav.classList.contains('open'));
+    });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900) nav.classList.remove('open');
     });
   }
 });
